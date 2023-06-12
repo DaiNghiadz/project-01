@@ -312,7 +312,8 @@ a {
 }
 
 .featured .list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     gap: 30px;
     margin-top: 70px;
@@ -571,7 +572,7 @@ a {
 .footer .row {
     display: flex;
     justify-content: space-between;
-    gap: 185px;
+    column-gap: 185px;
 }
 
 .footer .heading {

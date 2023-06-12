@@ -1,0 +1,247 @@
+/* PC */
+
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+}
+
+/* Tablet and mobile */
+
+@media screen and (max-width: 991px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .toggle-menu svg {
+        color: #666;
+        width: 24px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        padding: 60px;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        color: #333;
+        padding: 14px 0;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-wrap .info {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-wrap .desc {
+        width: 80%;
+        margin: 30px auto 0;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guides-items {
+        flex: 1;
+        margin: 0;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block,
+    .stats .info {
+        margin-top: 80px;
+        width: 100%;
+        order: 2;
+    }
+
+    .stats .info {
+        padding: 0;
+        order: 1;
+    }
+
+    .stats .info .sub-title {
+        width: 70%;
+    }
+
+    .stats .info .desc {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: row;
+    }
+
+    .stats .row-qty .qty {
+        font-size: 2.8rem;
+    }
+
+    .stats .row-qty .qty-desc {
+        font-size: 0.8rem;
+    }
+
+    .subscription .image {
+        display: none;
+    }
+
+    .footer .row {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        row-gap: 80px;
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+    .navbar .action {
+        display: none;
+    }
+
+    .menu-drawer {
+        inset: 0 25% 0 0;
+        padding: 40px;
+    }
+
+    .hero-wrap .title {
+        font-size: 5.5rem;
+    }
+
+    .hero-wrap {
+        height: calc(100vh - 40.5px);
+    }
+
+    .hide-in-mobile {
+        display: none;
+    }
+
+    .clients .images {
+        row-gap: 20px;
+    }
+
+    .list-guides {
+        row-gap: 80px;
+        flex-direction: column;
+    }
+
+    .featured .link {
+        display: none;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr;
+    }
+
+    .featured .item {
+        border-top-left-radius: 99px;
+        border-top-right-radius: 99px;
+    }
+
+    .featured .thumb {
+        width: 100%;
+    }
+
+    .stats .img-block .image {
+        width: 350px;
+        margin-right: auto;
+    }
+
+    .stats .stats-trend {
+        left: 25px;
+    }
+
+    .stats .row-qty {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .stats .row-qty .qty {
+        font-size: 5rem;
+    }
+
+    .stats .row-qty .qty-desc {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    .subscription .info .desc {
+        font-size: 1.4rem;
+    }
+
+    .footer .row {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-footer {
+        left: 80px;
+    }
+
+    .Copyright {
+        margin-top: 100px;
+    }
+}
